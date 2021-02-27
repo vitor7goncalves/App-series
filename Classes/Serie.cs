@@ -22,7 +22,8 @@ namespace Series
             retorno += "Genero: " + this.Genero + Environment.NewLine; // Environment.NewLine é so pra criar uma nova linha
             retorno += "Titulo: " + this.Titulo + Environment.NewLine; // Ele interpreta como o sistema operacional cria uma nova linha
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de Lançamento: " + this.Ano;
+            retorno += "Ano de Lançamento: " + this.Ano + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
         }
         public string retornaTitulo(){
@@ -30,6 +31,9 @@ namespace Series
         }
         public int retornaId(){
             return this.Id;
+        }
+        public bool retornaExcluido(){
+            return this.Excluido;
         }
         public void Excluir(){
             this.Excluido = true;

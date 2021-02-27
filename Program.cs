@@ -51,7 +51,10 @@ namespace Series
             }
             foreach (var serie in lista)
             {
-                System.Console.WriteLine("#ID {0}: - {1}", serie.retornaId(), serie.retornaTitulo());
+                var excluido = serie.retornaExcluido();
+                
+                System.Console.WriteLine("#ID {0}: - {1} {2}", serie.retornaId(), serie.retornaTitulo(), (excluido ? "-Excluido-": ""));
+                
             }
         }
         private static void InserirSerie()
@@ -77,50 +80,46 @@ namespace Series
         }
         private static void AtualizarSerie()
         {
-            System.Console.WriteLine("Lista das Séries");
-            var lista = repositorio.Lista();
-            if (lista.Count == 0)
+            System.Console.WriteLine("Qual o id da série que você deseja atualizar");
+            int indiceSerie = int.Parse(Console.ReadLine());
+            foreach (int i in Enum.GetValues(typeof(Genero)))
             {
-                System.Console.WriteLine("Nenhuma série cadastrada!");
-                return;
+                System.Console.WriteLine("{0} - {1}", i, Enum.GetName(typeof(Genero), i));
             }
-            foreach (var serie in lista)
-            {
-                System.Console.WriteLine("#ID {0}: {1}", serie.retornaId(), serie.retornaTitulo());
-            }
+            System.Console.WriteLine("Por favor, escolha o gênero entre as opções: ");
+            int entradaGenero = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("Qual o título da série?: ");
+            string entradaTitulo = Console.ReadLine();
+            System.Console.WriteLine("Em que ano foi lançado?: ");
+            int entradaAno = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("Digite uma Sinopse: ");
+            string entradaDescricao = Console.ReadLine();
+            Serie atualizaSerie = new Serie(id: indiceSerie,
+            genero: (Genero)entradaGenero,
+            titulo: entradaTitulo,
+            ano: entradaAno,
+            descricao: entradaDescricao);
+            repositorio.Atualiza(indiceSerie, atualizaSerie);
         }
         private static void ExcluirSerie()
         {
-            System.Console.WriteLine("Lista das Séries");
-            var lista = repositorio.Lista();
-            if (lista.Count == 0)
-            {
-                System.Console.WriteLine("Nenhuma série cadastrada!");
-                return;
-            }
-            foreach (var serie in lista)
-            {
-                System.Console.WriteLine("#ID {0}: {1}", serie.retornaId(), serie.retornaTitulo());
-            }
+           System.Console.WriteLine("Qual o id da série que você deseja Excluir");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            repositorio.Exclui(indiceSerie);
         }
         private static void VisualizarSerie()
         {
-            System.Console.WriteLine("Lista das Séries");
-            var lista = repositorio.Lista();
-            if (lista.Count == 0)
-            {
-                System.Console.WriteLine("Nenhuma série cadastrada!");
-                return;
-            }
-            foreach (var serie in lista)
-            {
-                System.Console.WriteLine("#ID {0}: {1}", serie.retornaId(), serie.retornaTitulo());
-            }
+           System.Console.WriteLine("Qual o id da série que você deseja Visualizar");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            var serie = repositorio.RetornaPorId(indiceSerie);
+            System.Console.WriteLine(serie);
         }
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
-            Console.WriteLine("Your Series");
+            Console.WriteLine("Yours Series");
             Console.WriteLine("Informe a opção desejada");
 
             Console.WriteLine("1- Listar Séries");

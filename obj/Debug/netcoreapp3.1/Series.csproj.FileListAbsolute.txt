@@ -11,3 +11,16 @@ D:\Meus Projetos\.NET\App cadastro\Series\obj\Debug\netcoreapp3.1\Series.csproj.
 D:\Meus Projetos\.NET\App cadastro\Series\obj\Debug\netcoreapp3.1\Series.dll
 D:\Meus Projetos\.NET\App cadastro\Series\obj\Debug\netcoreapp3.1\Series.pdb
 D:\Meus Projetos\.NET\App cadastro\Series\obj\Debug\netcoreapp3.1\Series.genruntimeconfig.cache
+D:\Meus Projetos\.NET\Series\bin\Debug\netcoreapp3.1\Series.exe
+D:\Meus Projetos\.NET\Series\bin\Debug\netcoreapp3.1\Series.deps.json
+D:\Meus Projetos\.NET\Series\bin\Debug\netcoreapp3.1\Series.runtimeconfig.json
+D:\Meus Projetos\.NET\Series\bin\Debug\netcoreapp3.1\Series.runtimeconfig.dev.json
+D:\Meus Projetos\.NET\Series\bin\Debug\netcoreapp3.1\Series.dll
+D:\Meus Projetos\.NET\Series\bin\Debug\netcoreapp3.1\Series.pdb
+D:\Meus Projetos\.NET\Series\obj\Debug\netcoreapp3.1\Series.csprojAssemblyReference.cache
+D:\Meus Projetos\.NET\Series\obj\Debug\netcoreapp3.1\Series.AssemblyInfoInputs.cache
+D:\Meus Projetos\.NET\Series\obj\Debug\netcoreapp3.1\Series.AssemblyInfo.cs
+D:\Meus Projetos\.NET\Series\obj\Debug\netcoreapp3.1\Series.csproj.CoreCompileInputs.cache
+D:\Meus Projetos\.NET\Series\obj\Debug\netcoreapp3.1\Series.dll
+D:\Meus Projetos\.NET\Series\obj\Debug\netcoreapp3.1\Series.pdb
+D:\Meus Projetos\.NET\Series\obj\Debug\netcoreapp3.1\Series.genruntimeconfig.cache

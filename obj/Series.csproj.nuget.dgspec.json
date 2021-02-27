@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Meus Projetos\\.NET\\App cadastro\\Series\\Series.csproj": {}
+    "D:\\Meus Projetos\\.NET\\Series\\Series.csproj": {}
   },
   "projects": {
-    "D:\\Meus Projetos\\.NET\\App cadastro\\Series\\Series.csproj": {
+    "D:\\Meus Projetos\\.NET\\Series\\Series.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Meus Projetos\\.NET\\App cadastro\\Series\\Series.csproj",
+        "projectUniqueName": "D:\\Meus Projetos\\.NET\\Series\\Series.csproj",
         "projectName": "Series",
-        "projectPath": "D:\\Meus Projetos\\.NET\\App cadastro\\Series\\Series.csproj",
+        "projectPath": "D:\\Meus Projetos\\.NET\\Series\\Series.csproj",
         "packagesPath": "C:\\Users\\silen\\.nuget\\packages\\",
-        "outputPath": "D:\\Meus Projetos\\.NET\\App cadastro\\Series\\obj\\",
+        "outputPath": "D:\\Meus Projetos\\.NET\\Series\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
